@@ -1,0 +1,106 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  color: #666;
+}
+
+.add-medication {
+  margin-bottom: 30px;
+}
+
+.add-medication label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.add-medication input,
+.add-medication select,
+.add-medication button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.add-medication .time-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-medication input[type="time"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.add-medication button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-medication button:hover {
+  background-color: #218838;
+}
+
+#reminders-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#reminders-list li {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#reminders-list button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#reminders-list button.edit {
+  background-color: #007bff;
+}
+
+#reminders-list button:hover {
+  opacity: 0.9;
+}

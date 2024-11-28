@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medication Reminder</title>
+  <link rel="stylesheet" href="med.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Medication Reminder</h1>
+    <p>Keep track of your medication schedule with easy reminders.</p>
+
+
+    <div class="add-medication">
+      <label for="medication-name">Medication Name:</label>
+      <input type="text" id="medication-name" placeholder="e.g., Paracetamol" required>
+
+      <label for="reminder-time">Reminder Time:</label>
+      <div class="time-container">
+        <input type="time" id="reminder-time" required>
+        
+      
+        
+        <select id="am-pm" required>
+          <option value="AM">AM</option>
+          <option value="PM">PM</option>
+        </select>
+      </div>
+
+      <button id="add-reminder">Set Reminder</button>
+    </div>
+
+    
+
+    <h2>Active Reminders</h2>
+    <ul id="reminders-list"></ul>
+  </div>
+
+  <script src="med.js"></script>
+</body>
+</html>
